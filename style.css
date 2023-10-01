@@ -1,0 +1,52 @@
+
+html { 
+    scroll-behavior: smooth;
+}
+.box {
+    background-color: aquamarine;
+    width: clamp(300px, 50%, 500px);   /* min-width, width, max-width  */
+}
+.top {
+   
+    height: 100vh;;
+}
+
+.top {
+   
+    height: 100vh;
+}
+
+/* it shows 5 lines and after that it clamp text  */
+.container {
+    width:1000px;
+    font-size: 22px;
+    display: -webkit-box;
+    -webkit-box-orient:vertical ;
+     -webkit-line-clamp: 3;  
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.items {
+    font-size: 20px;
+}
+
+.items :is(.item2, .item4) {
+    color: red;
+    background-color: aquamarine;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+.flex-box :is(.boxes) {
+    padding: 10px;
+}
+.flex-box :is(.boxes):nth-child(even) {
+    background-color: rgb(154, 197, 88);
+}
+.flex-box :is(.boxes):nth-child(odd) {
+    background-color: rgb(34, 44, 73);
+    color: #fff;
+}
